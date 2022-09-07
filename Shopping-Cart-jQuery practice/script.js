@@ -1,6 +1,6 @@
 
 let zbir = 0; // ukupna cena
-let artikli = [] // artikli u korpi za lifecycle hook
+let artikli = [] // artikli u korpi za objekat
 $(".add").click((e) => {
   e.preventDefault();
   let name = e.target.parentElement.parentElement.children[1].innerText;
@@ -31,7 +31,7 @@ $(".add").click((e) => {
     cena: price,
     kolicina: kolicina,
   };
-  artikli.push(objekat); // ovo valjda radi
+  artikli.push(objekat); 
  
 
   // ukupno
